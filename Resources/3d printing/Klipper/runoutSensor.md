@@ -1,4 +1,5 @@
 Configure filament run out sensor with the printer.cfg file.
+
 `
 filament_switch_sensor: RUNOUT_SENSOR
 pause_on_runout: true
