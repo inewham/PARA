@@ -45,3 +45,4 @@ sudo reboot
 
 ## References:
 https://github.com/z-bolt/OctoScreen/wiki/Installing-OctoScreen-with-a-3.5"-480x320-TFT-screen
+https://www.youtube.com/watch?v=_MJLJz-pJAA&list=LL
