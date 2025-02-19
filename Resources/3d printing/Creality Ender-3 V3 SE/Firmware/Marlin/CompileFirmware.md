@@ -19,7 +19,7 @@ After cloning this new repo, I amended the settings, and it worked as it should!
 
 Just an FYI, my daily driver is a Linux laptop running Pop OS 22.04 LTS, I spent so much time trying to compile the firmware using VSCode on this platform, and I couldn't get it to compile successfully.
 
-Please see the 1.0.7 from TomasekJ repo and a 1.0.8 bin, which I compiled from rtorchia's repo.
+Please see the 1.0.7 from TomasekJ repo, below; and a 1.0.8 bin, which I compiled from rtorchia's repo.
 
 # References
 
