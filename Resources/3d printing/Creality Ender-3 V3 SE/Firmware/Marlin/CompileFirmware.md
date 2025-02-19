@@ -8,7 +8,7 @@ Annoyingly, there was always a notification being displayed, as shown below, whi
 
 ![hostActionCommand](./Assets/hostActionCommand.png)
 
-Until, I purchased a Creality Runout sensor, this worked perfectly out the box if you were using the SD card to start your prints. 
+Until, I purchased a Creality Runout sensor, this worked perfectly out the box if you were using the SD card to start your prints.  
 After a bit of digging, I found that I needed to enable a couple of features (HOST_ACTION_COMMAND and FILAMENT_RUNOUT_SENSOR).
 
 I initially came across the TomasekJ Ender-3V3-SE github repository, but was unable to enable these features (I tried downloading the source zip file and cloning the repo).
