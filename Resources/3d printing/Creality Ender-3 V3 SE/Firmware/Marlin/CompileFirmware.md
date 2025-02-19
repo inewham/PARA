@@ -5,7 +5,7 @@
 My first 3d printer was a Creality Ender-3 V3 SE, and from the very start I was using it with a Raspberry Pi 3 and OctoPrint.
 Annoyingly, there was always a notification being displayed, as shown below, which I could safely ignore.
 
-![hostActionCommand](Resources/Assets/images/OctoPrint/hostActionCommand.png)
+![hostActionCommand](PARA/Resources/Assets/images/OctoPrint/hostActionCommand.png)
 
 Until, I purchased a Creality Runout sensor, this worked perfectly out the box if you were using the SD card to start your prints.
 After a bit of digging, I found that I needed to enable a couple of features (HOST_ACTION_COMMAND and FILAMENT_RUNOUT_SENSOR).
