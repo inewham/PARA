@@ -23,6 +23,7 @@ Please see the 1.0.7 from TomasekJ repo and a 1.0.8 bin, which I compiled from r
 
 # References
 
+- https://www.youtube.com/watch?v=J9vxJT5Tgh4&t=687s
 - https://octoprint.org/
 - https://plugins.octoprint.org/plugins/eeprom_marlin/
 - https://github.com/TomasekJ/Ender-3V3-SE/releases/tag/V1.0.7
