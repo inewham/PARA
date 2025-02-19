@@ -54,7 +54,54 @@ If prompted to use KIAUH version 6, select yes.
 - Under the **_Authentication_** section, click on the **_ADD USER_** button.
 - Enter a **_User_** name and **_Password_** and click **_ADD_**.
 
-## Configure Klipper
+## Download printer.cfg
+
+Enter the follow to download a printer.cfg file for the Ender-3 V3 SE.
+```
+cd ~/printer-data/config
+touch marco.cfg
+wget https://raw.githubusercontent.com/bootuz-dinamon/ender3-v3-se-full-klipper/refs/heads/main/printer.cfg
+cd ~
+```
+
+## Create Firmware for printer
+
+Now we need to create the firmware so Klipper can communicate with the mainboard, execute the following.
+```
+./kiauh/kiauh.sh
+```
+- Select **_4_** for **_Advanced_**.
+- Select **_1_** for **_Build_**.
+- Ensure **_Micro-contoller Arcitecture_** is highlighted, and press **_Enter_**.
+- Ensure **_STMicroelectronics STM32_** is highlighted, and press **_Enter_**.
+- Ensure **_Processor model_** is highlighted, and press **_Enter_**.
+- Ensure **_STM32F103_** is highlighted, and press **_Enter_**.
+- Ensure **_Bootloader offset_** is highlighted, and press **_Enter_**.
+- Ensure **_28KiB bootloader_** is highlighted , and press **_Enter_**.
+- Ensure **_Communication interface_** is highlighted, and press **_Enter_**.
+- Ensure **_Serial (on USART1 PB10/PA9)_** is highlighted, and press **_Enter_**.
+- Press Q and then Y.
+
+The firmware will now start to compile.
+- Press **_y_** to save the firmware configuration.
+- Enter **_Ender3V3SE_** and press **_Enter_**.
+- Press **_y_** to confirm the save location.
+- Press **_B_** and the **_Q_** to exit KIAUH.
+- Move the new bin file to printer-data/config folder by executing the following.
+```
+mv klipper/out/klipper.bin printer_data/config
+```
+- You will need to download **_klipper.bin_** from the RPi, to your local machine, if you are using Windows, you'll need to use WinSCP, if you are using Linux, execute the following.
+```
+cd ~
+scp <USERNAME>@<IP_ADDRESS>:/home/<USERNAME>/printer_data/config/klipper.bin ./
+```
+- Copy **_klipper.bin_** to an SD card.
+- Ensure the printer is turned off, and insert the SD card into the reader.
+- Power on the printer.
+- From the klipper web UI, select **_Configuration_**.
+- Click on **_FIRMWARE RESTART_**.
+
 
 
 
@@ -62,3 +109,5 @@ If prompted to use KIAUH version 6, select yes.
 
 - https://www.raspberrypi.com/documentation/computers/getting-started.html#installing-the-operating-system
 - https://github.com/dw-0/kiauh
+- https://github.com/bootuz-dinamon/ender3-v3-se-full-klipper/tree/main?tab=readme-ov-file
+- https://github.com/Klipper3d/klipper
