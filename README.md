@@ -1,4 +1,4 @@
-This repository was setup to mainly keep and share documentation in a central location i.e. Notion, OneNote etc.  
+This repository was setup to mainly keep and share documentation in a central location other than Notion, OneNote etc.  
 As I discovered sharing pages in Notion was a bit of a pain (for the recipient).
 
 It will follow the PARA framework, created by Tiago Forte; I highly recommend **_Build a Second Brain_**.
