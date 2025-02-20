@@ -8,6 +8,15 @@ Below are the directions that I  followed to get it working correctly.
 # Install and configure touch screen
 
 ```
+./kiauh/kiauh.sh
+```
+- Select **_1_** to Install.
+- Select **_7_** for Touch Screen GUI.
+Follow the wizard opting for yes, to most of the questions, I opted not to setup a cron job.
+- Enter **_B_** to return to the main menu.
+- Enter **_Q_** to quit the application.
+
+```
 sudo nano /boot/firmware/config.txt
 ```
 Amending the **_dtover=_** to **_dtoverlay=piscreen,drm_**.
