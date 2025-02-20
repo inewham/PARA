@@ -12,7 +12,7 @@ In this example tile 5 was the best tile, this will be +5, this is then applied 
 
 The <CURRENT_FLOW_RATIO> can be found in the **_Material settings_** of the filament.
 
-![Flow Ratio](./Asset/FlowRatio.png)
+![Flow Ratio](./Assets/FlowRatio.png)
 
 In this example it is **_0.98_** so the formula will be as follows.
 
