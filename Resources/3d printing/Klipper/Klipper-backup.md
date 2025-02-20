@@ -28,8 +28,22 @@ curl -fsSL get.klipperbackup.xyz | bash
 ```
 Follow the installation wizard to config package.
 
-Paste the below code into the relevant macro configuration file, this will put a button in the macro section on the dashboard:
 ```
+./kiauh/kiauh.sh
+```
+- Select **_E_** for **_Extensions_**.
+- Select **_1_** for **_G-Code Shell Command_**.
+- Select **_1_** to **_Install_**.
+- Enter **_y_** to **_Create an example shell command_**.
+- Enter **_B_** to go back to the **_Extensions_** menu.
+- Enter **_B_** to go back to the **_Main menu_**.
+- Enter **_Q_** to quit KIAUH.
+
+Paste
+Paste the below code into the **_printer_data/config/shell_command.cfg_** this will put a button in the macro section on the dashboard:
+```
+sudo nano printer_data/config/shell_command.cfg
+
 [gcode_macro update_git]
 gcode:
     {% set message = params.MESSAGE|default() %}
