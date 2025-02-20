@@ -40,7 +40,7 @@ Follow the installation wizard to config package.
 - Enter **_Q_** to quit KIAUH.
 
 Paste
-Paste the below code into the **_printer_data/config/shell_command.cfg_** this will put a button in the macro section on the dashboard:
+Paste the below code into the **_printer_data/config/shell_command.cfg_** replacing the existing code, this will put a button in the macro section on the dashboard:
 ```
 sudo nano printer_data/config/shell_command.cfg
 
