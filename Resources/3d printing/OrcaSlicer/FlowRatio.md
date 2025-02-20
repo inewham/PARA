@@ -1,5 +1,11 @@
 # Fine Tuning filament settings - Flow Ratio
 
+## Overview
+
+Not all filaments are the same and this process should be followed for each type of filament.  
+I would not do this for different colours of PLA, but would for different brands, as well as types of PLA i.e., PLA and Silk PLA etc.  
+The Temparature tower calibration should be completed before proceeding, and the new temparature values entered into the Filament settings.
+
 - Open a **_New Project_** in OrcaSlicer.
 - Select **_Calibration_** Flow Rate, PASS 1.
 - Ensure the correct printer and Filament are select.
