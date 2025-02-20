@@ -16,8 +16,8 @@ The <CURRENT_FLOW_RATIO> can be found in the **_Material settings_** of the fila
 
 In this example it is **_0.98_** so the formula will be as follows.
 
-0.98x(100+5)/100
-0.98x105/100
+0.98x(100+5)/100  
+0.98x105/100  
 102.9/100=1.029
 
 NOTE: If the best tile was -5, then the equation would have been 0.98x(100-5)/100.
