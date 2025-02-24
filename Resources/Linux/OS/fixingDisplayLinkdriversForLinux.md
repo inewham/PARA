@@ -1,4 +1,4 @@
-# [🔗 link] — Fixing DisplayLink (EVDI) drivers for Linux kernel 6.x
+# Fixing DisplayLink (EVDI) drivers for Linux kernel 6.x
 
 Kernel 6.x broke the support for the EVDI which is shipped with current release (5.6.1) of the [DisplayLink drivers for Ubuntu](https://www.synaptics.com/products/displaylink-graphics/downloads/ubuntu). This is really annoying as all of a ‘sudden’ my workstations which sport [Pop!_OS 22.04 LTS](https://pop.system76.com/) wouldn’t work with external monitors, connected using a DisplayLink device, anymore. This happened by an upgrade package overnight (around 25th of October 2022). It took me a little while to realize what the actual problem is.
 
