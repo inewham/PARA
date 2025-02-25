@@ -2,4 +2,4 @@
 
 [Bed Assembly](https://www.youtube.com/watch?v=e-cp7vQgmNA)
 
-![Spring adjustment](Resources/General/assets/springsAdjusting.png)
+![Spring adjustment](assets/springsAdjusting.png)
