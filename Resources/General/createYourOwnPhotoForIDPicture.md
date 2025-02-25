@@ -2,7 +2,7 @@
 
 [https://blog.google/products/pixel/take-id-photo-google-pixel-tips/](https://blog.google/products/pixel/take-id-photo-google-pixel-tips/)
 
-![assets/pixel_headshots.width-1600.format-webp.webp](assets/pixel_headshots.width-1600.format-webp.webp)
+![webp](assets/pixel_headshots.width-1600.format-webp.webp)
 
 Just started a new job and need a photo for your work profile? Want a nice-looking photo for your ID badge that you’ll be happy to look at every day? For both instances, you'll need a slick, professional-looking portrait. The secret to getting one that's just right — without a pro photographer or fancy DSLR — might be right in your pocket: Just pull out your Pixel.
 
