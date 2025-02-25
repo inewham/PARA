@@ -27,7 +27,7 @@ sudo docker run -d \
 -v transmission:/watch \
 --name=transmission \
 -e TZ=Europe/London \
--e USER=inewham \
+-e USER=jDoe \
 -e PASS=:LamePassword! \
 -p 9091:9091 \
 lscr.io/linuxserver/transmission:latest
