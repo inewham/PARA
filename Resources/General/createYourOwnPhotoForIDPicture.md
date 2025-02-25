@@ -1,7 +1,5 @@
 # Create your own photo for ID picture
 
-[https://blog.google/products/pixel/take-id-photo-google-pixel-tips/](https://blog.google/products/pixel/take-id-photo-google-pixel-tips/)
-
 ![webp](assets/pixel_headshots.jpg)
 
 Just started a new job and need a photo for your work profile? Want a nice-looking photo for your ID badge that you’ll be happy to look at every day? For both instances, you'll need a slick, professional-looking portrait. The secret to getting one that's just right — without a pro photographer or fancy DSLR — might be right in your pocket: Just pull out your Pixel.
@@ -79,3 +77,8 @@ If you want to take things even further, you can hop into the Google Photos app 
 Try using Pixel’s suggested edits — or dive in and mess around with some settings on your own — to get a look and style you love.
 
 With Google Photos, edits are easier than ever. So even if you’re not an experienced photographer, try tweaking some settings and just see what they do and if you like the overall effect. Since Photo’s edits leave your original image untouched, you can always go back to what you started with. “The key is experimenting,” says Michael. “How do *you* want to show yourself to the world?”
+
+# Reference
+
+[https://blog.google/products/pixel/take-id-photo-google-pixel-tips/](https://blog.google/products/pixel/take-id-photo-google-pixel-tips/)y
+
