@@ -1,5 +1,5 @@
 # Complete Guide to Setting Up BL-Touch in Klipper
-[_TOC_]
+
 Ensure the following is listed in the printer.cfg file.
 ```
 [bltouch]
@@ -21,8 +21,8 @@ speed: 50
 z_hop: 10                  # How much the nozzle will move after homing.
 z_hop_speed: 5
 ```
-Within the printer.cfg file the **endstop_pin:** key should be changed to the following.
-**endstop_pin: probe:z_virtual_endstop**
+Within the printer.cfg file the **endstop_pin:** key should be changed to the following.  
+**endstop_pin: probe:z_virtual_endstop**  
 Then comment out **position_endstop:** as this will be used within the BLtouch section.
 
 - Save and restart the firmware.
@@ -50,8 +50,35 @@ Now, using the **Ending Coordinates** subtract the **Starting Coordinates** this
 - Within the printer.cfg file, under the **stepper_z** section, ensure you have a **position_min:** key, with a value of negative six, if an error is received, you can increase the value.
 - Ensure the printer is homed, then in the console enter **probe_calibrate**.
 - Using the provide value buttons, perform the paper test on the nozzle (good tension, but can still move it).
+- Once completed, select **ACCEPT** (or type **accept** into the console) and click **SAVE AND RESTART** (or type **save_config** into the console), the new setting will be saved at the bottom of the config file.
+
+## Finding the MESH_MIN and MESH_MAX values
+
+- Within the printer.cfg, ensure there is a **bed_mesh** section, if one is not present, add the below.
+```
+[bed_mesh]
+speed: 50  #speed moved between probing points
+horizontal_move_z: 5  #distance the nozzle risers after each probe
+mesh_min: 16, 14    # mesh_min and mesh_max create a bondary box the probe will stay in
+mesh_max: 208,211
+probe_count: 5,5  #number of points along the x and y axis
+mesh_pps: 3,3  #point calculated between probing points
+fade_start: 1  #fade_start and fade_end are the measurements used to decrease the effectiveness of the bed mesh
+fade_end: 10
+fade_target: 0
+algorithm: bicubic
+```
+- Home the print head.
+- In the X coordinate box enter 0 (Zero) and press **Enter**.
+- In the Y coordinate box enter 0 (Zero) and press **Enter** (note the probe is not over the bed).
+- Using the probe control arrows, move the probe so it is roughly 10mm onto the print bed on both X and Y axis.
+- Note the X and Y coordinates, and add the X and Y offset taken earlier, this will give the starting coordinates for the bed mesh, this becomes the **mesh_min** value.
+- Within printer.cfg, under the stepper_x and stepper_y sections, find the position_max value.
+- Enter these values into the X and Y coordinates control fields.
+- Using stepper_x and stepper_y values, add the x and y offset, this becomes the **mesh_max** value.
 
 # Reference
-
+- https://www.youtube.com/watch?v=5vmjBXvY6BA&t=632s
 - https://www.klipper3d.org/G-Codes.html?h=bltouch#bltouch_debug
 
+10:32
